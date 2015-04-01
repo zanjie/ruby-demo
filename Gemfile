@@ -8,11 +8,14 @@ gem 'rails', '4.0.0'
 group :development, :test do 
   gem 'sqlite3'
   gem 'rspec-rails', '2.13.1' 
+  gem 'guard-rspec', '2.5.0' 
 end
 
 group :test do 
   gem 'selenium-webdriver', '2.0.0' 
   gem 'capybara', '2.1.0' 
+  gem 'rb-notifu', '0.0.4' 
+  gem 'win32console', '1.3.2' 
 end
 
 # Use SCSS for stylesheets
@@ -45,14 +48,15 @@ end
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 group :production do 
   gem 'pg', '0.15.1' 
 end
 
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

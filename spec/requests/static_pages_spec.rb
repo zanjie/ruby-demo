@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "GET /static_pages" do
+  let(:base_title) { "Ruby on Rails Tutorial Sample App" }
+
   describe "Home page" do
     it "should have the content 'Sample'" do 
       visit '/static_pages/home' 
