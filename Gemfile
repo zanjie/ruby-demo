@@ -8,10 +8,14 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'sqlite3'
 gem 'rspec-rails'
 gem 'guard-rspec'
+gem 'win32-process'
 
-group :test do 
+group :development,:test do 
 gem 'selenium-webdriver'
 gem 'capybara'
+gem 'spork-rails', github: 'railstutorial/spork-rails' 
+gem 'guard-spork', '1.5.0' 
+gem 'childprocess'
 end
 
 # Use SCSS for stylesheets
